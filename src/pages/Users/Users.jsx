@@ -94,7 +94,17 @@ const Users = () => {
                         </thead>
                         <tbody>
                         {
-                            sortUsers.map(u =>
+                            sortUsers
+                                .sort((a,b)=>{
+                                        if (a.name > b.name) {
+                                            return 1;
+                                        }
+                                        if (a.name < b.name) {
+                                            return -1;
+                                        }
+                                        return 0}
+                                    )
+                                .map(u =>
                                 <tr key={u.id}
                                     className={style.users__tableItem}
                                     onDoubleClick={() => {
