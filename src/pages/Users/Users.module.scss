@@ -1,0 +1,31 @@
+.users{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Thin",sans-serif;
+  &__input{
+    width: 400px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 5px;
+    input{
+      padding: 10px;
+      margin: 10px;
+    }
+  }
+  &__tableItem{
+    cursor: pointer;
+  }
+  table{
+    margin-top: 30px;
+    tr{
+
+    }
+    td{
+      padding: 10px;
+      border: 1px solid black;
+    }
+  }
+}

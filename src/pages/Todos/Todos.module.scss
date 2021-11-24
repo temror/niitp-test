@@ -1,0 +1,24 @@
+.todos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  font-family: "Roboto Thin",sans-serif;
+  &__select{
+    margin: 20px;
+    padding: 10px;
+  }
+  td{
+    padding: 10px;
+    border: 1px solid black;
+  }
+  &__completed{
+    background-color: aquamarine;
+  }
+  &__notcompleted{
+    background-color: lightcoral;
+  }
+  button{
+    padding: 10px;
+  }
+}
